@@ -1,3 +1,4 @@
+
 ---
 title: What is krknctl?
 description: Krkn CLI tool
@@ -17,6 +18,12 @@ This allows users to focus solely on implementing chaos engineering practices wi
 
 
 ## CLI Flags
+The CLI flags in `krknctl` provide a way to customize the behavior of the tool and fine-tune its functionality. The following table lists some of the available flags:
+
 | Flag | Type | Default | Description |
 |------|------|---------|-------------|
 | test-flag-doc-sync-2 | string |  | flag added to test documentation sync pipeline 2 |
+| --help |  |  | Displays help information about the available flags and their usage |
+| --version |  |  | Displays the version of `krknctl` being used |
+| --verbose |  |  | Enables verbose logging to provide more detailed output |
+| --debug |  |  | Enables debug mode to provide more detailed error messages and debugging information |
