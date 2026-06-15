@@ -27,3 +27,5 @@ The CLI flags in `krknctl` provide a way to customize the behavior of the tool a
 | --version |  |  | Displays the version of `krknctl` being used |
 | --verbose |  |  | Enables verbose logging to provide more detailed output |
 | --debug |  |  | Enables debug mode to provide more detailed error messages and debugging information |
+
+In addition to the flags listed above, `krknctl` also supports a range of advanced flags that can be used to customize its behavior. These flags can be used to specify options such as the container runtime to use, the network interface to bind to, and the logging level. For more information on the available flags and their usage, users can refer to the `krknctl` documentation or run the command with the `--help` flag. The CLI flags can be combined in various ways to achieve the desired outcome, and users are encouraged to experiment with different flag combinations to find the one that works best for their use case.
