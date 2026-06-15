@@ -42,6 +42,7 @@ The usage of these flags can be demonstrated with the following examples:
 - To bind to a specific network interface, users can use the `--net` flag followed by the name of the interface (e.g., `--net eth0`).
 - The `--log-level` flag can also be used to specify the logging level for a specific component, for example, `--log-level component_name=debug`.
 - The `--runtime` flag can also be used to specify the container runtime options, for example, `--runtime docker --runtime-opts '--privileged'`.
+- The `--net` flag can also be used to specify the network interface to bind to, for example, `--net eth0 --net ip=192.168.1.100`.
 
 Some advanced use cases for the CLI flags include:
 - Using the `--log-level` flag to specify different logging levels for different components, for example, `--log-level component1=debug --log-level component2=info`.
@@ -56,6 +57,11 @@ A more detailed explanation of each flag is as follows:
 - `--log-level`: This flag specifies the logging level, which can be one of 'debug', 'info', 'warn', or 'error'. It can be used to customize the logging level and provides more flexibility in terms of logging.
 - `--runtime`: This flag specifies the container runtime to use, which can be one of 'docker' or 'podman'. It provides more flexibility in terms of container runtime and allows users to choose the runtime that best suits their needs.
 - `--net`: This flag specifies the network interface to bind to. It provides more flexibility in terms of network configuration and allows users to choose the network interface that best suits their needs.
+
+Additionally, the following flags are also available:
+- `--log-format`: This flag specifies the format of the log messages. It can be used to customize the log output and provides more flexibility in terms of logging.
+- `--log-file`: This flag specifies the file to which log messages should be written. It can be used to customize the log output and provides more flexibility in terms of logging.
+- `--runtime-opts`: This flag specifies additional options for the container runtime. It can be used to customize the behavior of the container runtime and provides more flexibility in terms of container runtime.
 
 By using these flags, users can tailor the behavior of `krknctl` to suit their specific needs and requirements. It is recommended to explore the available flags and their usage to get the most out of the tool.
 
@@ -77,3 +83,10 @@ To further expand on the CLI flags, here are some additional details:
 - The `--version` flag can also be used to display the version of a specific component, for example, `--version --runtime`.
 
 These additional details provide more information on the usage of the CLI flags and their options, allowing users to better understand and utilize the flags to customize the behavior of `krknctl`.
+
+Furthermore, the following examples illustrate the usage of the CLI flags:
+- `krknctl --help --log-level` will display help information for the `--log-level` flag.
+- `krknctl --version --runtime` will display the version of the container runtime.
+- `krknctl --log-level debug --runtime docker` will run `krknctl` with the logging level set to debug and the container runtime set to docker.
+
+It is also worth noting that the CLI flags can be used in combination with other features of `krknctl`, such as the scenario descriptions and detailed instructions, to provide a more comprehensive and customizable experience for users.
