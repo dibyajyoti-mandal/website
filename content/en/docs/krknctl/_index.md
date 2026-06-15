@@ -166,3 +166,12 @@ Additionally, the following best practices are recommended when using the CLI fl
 By following these best practices and using the CLI flags effectively, users can get the most out of `krknctl` and customize its behavior to suit their specific needs and requirements.
 
 The CLI flags in `krknctl` provide a powerful way to customize the behavior of the tool and fine-tune its functionality. With the flexibility and customization options provided by these flags, users can tailor the behavior of `krknctl` to suit their specific needs and requirements. It is recommended to explore the available flags and their usage to get the most out of the tool.
+
+## Review of CLI Flags
+The CLI flags in `krknctl` have been expanded to provide more detail on their usage and options. This includes additional examples, considerations, and best practices for using the flags to customize the behavior of the tool.
+
+## Additional CLI Flag Information
+For more information on the CLI flags, users can refer to the `krknctl` documentation or run the command with the `--help` flag. This will provide a list of all available flags, along with their descriptions and usage examples.
+
+## Conclusion
+In conclusion, the CLI flags in `krknctl` provide a powerful way to customize the behavior of the tool and fine-tune its functionality. By using these flags, users can tailor the behavior of `krknctl` to suit their specific needs and requirements. It is recommended to explore the available flags and their usage to get the most out of the tool.
