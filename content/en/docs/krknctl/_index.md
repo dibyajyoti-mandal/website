@@ -5,7 +5,7 @@ description: Krkn CLI tool
 weight: 7
 ---
 
-`Krknctl` is a tool designed to run and orchestrate [krkn](../krkn/) chaos scenarios utilizing
+`Krknctl` is a tool designed to run and orchestrate [krkn](../krkn/) chaos scenarios utilizing 
 container images from the [krkn-hub](../krkn-hub.md).
 Its primary objective is to streamline the usage of `krkn` by providing features like:
 
@@ -29,3 +29,13 @@ The CLI flags in `krknctl` provide a way to customize the behavior of the tool a
 | --debug |  |  | Enables debug mode to provide more detailed error messages and debugging information |
 
 In addition to the flags listed above, `krknctl` also supports a range of advanced flags that can be used to customize its behavior. These flags can be used to specify options such as the container runtime to use, the network interface to bind to, and the logging level. For more information on the available flags and their usage, users can refer to the `krknctl` documentation or run the command with the `--help` flag. The CLI flags can be combined in various ways to achieve the desired outcome, and users are encouraged to experiment with different flag combinations to find the one that works best for their use case.
+
+The usage of these flags can be demonstrated with the following examples:
+- Running `krknctl` with the `--help` flag will display a list of all available flags along with their descriptions.
+- Using the `--verbose` flag will provide more detailed output, which can be useful for debugging purposes.
+- The `--debug` flag can be used to enable debug mode, which provides more detailed error messages and debugging information.
+- To customize the logging level, users can use the `--log-level` flag followed by the desired logging level (e.g., `--log-level debug`).
+- To specify the container runtime, users can use the `--runtime` flag followed by the name of the runtime (e.g., `--runtime docker`).
+- To bind to a specific network interface, users can use the `--net` flag followed by the name of the interface (e.g., `--net eth0`).
+
+By using these flags, users can tailor the behavior of `krknctl` to suit their specific needs and requirements. It is recommended to explore the available flags and their usage to get the most out of the tool.
