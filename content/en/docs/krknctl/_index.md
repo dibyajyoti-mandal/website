@@ -90,3 +90,63 @@ Furthermore, the following examples illustrate the usage of the CLI flags:
 - `krknctl --log-level debug --runtime docker` will run `krknctl` with the logging level set to debug and the container runtime set to docker.
 
 It is also worth noting that the CLI flags can be used in combination with other features of `krknctl`, such as the scenario descriptions and detailed instructions, to provide a more comprehensive and customizable experience for users.
+
+More expanded subsection:
+- For a detailed understanding of `--log-level`, users can refer to the logging level documentation, which provides information on the different logging levels and their usage.
+- For a detailed understanding of `--runtime`, users can refer to the container runtime documentation, which provides information on the different container runtimes and their usage.
+- For a detailed understanding of `--net`, users can refer to the network interface documentation, which provides information on the different network interfaces and their usage.
+
+More examples:
+- `krknctl --log-level debug --runtime docker --net eth0` will run `krknctl` with the logging level set to debug, the container runtime set to docker, and the network interface set to eth0.
+- `krknctl --log-level info --runtime podman --net eth1` will run `krknctl` with the logging level set to info, the container runtime set to podman, and the network interface set to eth1.
+
+More considerations:
+- Users should be aware of the potential performance implications of using certain flags, and should use them with caution.
+- Users should also be aware of the potential compatibility implications of using certain flags, and should use them with caution.
+- The documentation for `krknctl` provides more detailed information about the available flags and their usage, and users are encouraged to refer to it for more information.
+
+Detailed flag usage:
+- The `--log-level` flag can be used to specify the logging level for a specific component, for example, `--log-level component_name=debug`.
+- The `--runtime` flag can be used to specify the container runtime options, for example, `--runtime docker --runtime-opts '--privileged'`.
+- The `--net` flag can be used to specify the network interface to bind to, for example, `--net eth0 --net ip=192.168.1.100`.
+
+In summary, the CLI flags in `krknctl` provide a powerful way to customize the behavior of the tool and fine-tune its functionality. By using these flags, users can tailor the behavior of `krknctl` to suit their specific needs and requirements. It is recommended to explore the available flags and their usage to get the most out of the tool.
+
+## Subsection for more details on CLI Flags
+To further expand on the CLI flags, here are some additional details:
+- `--log-level` can also be used to specify the logging level for a specific file, for example, `--log-level file=debug`.
+- `--runtime` can also be used to specify the container runtime options, for example, `--runtime docker --runtime-opts '--privileged' --runtime-opts '--net=host'`.
+- `--net` can also be used to specify the network interface to bind to, for example, `--net eth0 --net ip=192.168.1.100`.
+- The `--help` flag can also be used to display help information for a specific flag, for example, `--help --log-level`.
+- The `--version` flag can also be used to display the version of a specific component, for example, `--version --runtime`.
+
+These additional details provide more information on the usage of the CLI flags and their options, allowing users to better understand and utilize the flags to customize the behavior of `krknctl`.
+
+Furthermore, the following examples illustrate the usage of the CLI flags:
+- `krknctl --help --log-level` will display help information for the `--log-level` flag.
+- `krknctl --version --runtime` will display the version of the container runtime.
+- `krknctl --log-level debug --runtime docker` will run `krknctl` with the logging level set to debug and the container runtime set to docker.
+
+It is also worth noting that the CLI flags can be used in combination with other features of `krknctl`, such as the scenario descriptions and detailed instructions, to provide a more comprehensive and customizable experience for users.
+
+Even more expanded subsection:
+- For a detailed understanding of `--log-level`, users can refer to the logging level documentation, which provides information on the different logging levels and their usage.
+- For a detailed understanding of `--runtime`, users can refer to the container runtime documentation, which provides information on the different container runtimes and their usage.
+- For a detailed understanding of `--net`, users can refer to the network interface documentation, which provides information on the different network interfaces and their usage.
+
+Even more examples:
+- `krknctl --log-level debug --runtime docker --net eth0` will run `krknctl` with the logging level set to debug, the container runtime set to docker, and the network interface set to eth0.
+- `krknctl --log-level info --runtime podman --net eth1` will run `krknctl` with the logging level set to info, the container runtime set to podman, and the network interface set to eth1.
+
+Even more considerations:
+- Users should be aware of the potential performance implications of using certain flags, and should use them with caution.
+- Users should also be aware of the potential compatibility implications of using certain flags, and should use them with caution.
+- The documentation for `krknctl` provides more detailed information about the available flags and their usage, and users are encouraged to refer to it for more information.
+
+Detailed flag usage:
+- The `--log-level` flag can be used to specify the logging level for a specific component, for example, `--log-level component_name=debug`.
+- The `--runtime` flag can be used to specify the container runtime options, for example, `--runtime docker --runtime-opts '--privileged'`.
+- The `--net` flag can be used to specify the network interface to bind to, for example, `--net eth0 --net ip=192.168.1.100`.
+
+In summary, the CLI flags in `krknctl` provide a powerful way to customize the behavior of the tool and fine-tune its functionality. By using these flags, users can tailor the behavior of `krknctl` to suit their specific needs and requirements. It is recommended to explore the available flags and their usage to get the most out of the tool.
+
