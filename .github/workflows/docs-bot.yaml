@@ -8,7 +8,10 @@ jobs:
   refine:
     if: |
       github.event.issue.pull_request != null &&
-      contains(github.event.comment.body, '@krkn-docs-bot')
+      contains(github.event.comment.body, '@krkn-docs-bot') &&
+      !startsWith(github.event.comment.body, '⚙️') &&
+      !startsWith(github.event.comment.body, '✅') &&
+      !startsWith(github.event.comment.body, '❌')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Auto-doc
