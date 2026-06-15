@@ -14,3 +14,9 @@ Its primary objective is to streamline the usage of `krkn` by providing features
 
 and much more, effectively abstracting the complexities of the container environment. 
 This allows users to focus solely on implementing chaos engineering practices without worrying about runtime complexities.
+
+
+## CLI Flags
+| Flag | Type | Default | Description |
+|------|------|---------|-------------|
+| test-flag-doc-sync-2 | string |  | flag added to test documentation sync pipeline 2 |
