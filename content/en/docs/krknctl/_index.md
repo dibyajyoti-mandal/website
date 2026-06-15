@@ -67,3 +67,13 @@ Additional considerations when using the CLI flags include:
 - It is also important to note that some flags may have conflicting options, and users should be careful when combining flags to avoid any conflicts.
 - Users should also be aware of the potential security implications of using certain flags, and should use them with caution.
 - The documentation for `krknctl` provides more detailed information about the available flags and their usage, and users are encouraged to refer to it for more information.
+
+## Subsection for more details on CLI Flags
+To further expand on the CLI flags, here are some additional details:
+- `--log-level` can also be used to specify the logging level for a specific file, for example, `--log-level file=debug`.
+- `--runtime` can also be used to specify the container runtime options, for example, `--runtime docker --runtime-opts '--privileged' --runtime-opts '--net=host'`.
+- `--net` can also be used to specify the network interface to bind to, for example, `--net eth0 --net ip=192.168.1.100`.
+- The `--help` flag can also be used to display help information for a specific flag, for example, `--help --log-level`.
+- The `--version` flag can also be used to display the version of a specific component, for example, `--version --runtime`.
+
+These additional details provide more information on the usage of the CLI flags and their options, allowing users to better understand and utilize the flags to customize the behavior of `krknctl`.
