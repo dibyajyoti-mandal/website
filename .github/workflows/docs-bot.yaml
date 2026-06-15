@@ -1,0 +1,35 @@
+name: Docs Bot Refinement
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  refine:
+    if: |
+      github.event.issue.pull_request != null &&
+      contains(github.event.comment.body, '@krkn-docs-bot')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Auto-doc
+        uses: actions/checkout@v4
+        with:
+          repository: dibyajyoti-mandal/Auto-doc
+          token: ${{ secrets.DOCS_SYNC_BOT_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run refinement handler
+        env:
+          BOT_TOKEN: ${{ secrets.DOCS_SYNC_BOT_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+          PR_NUMBER: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
+        run: python3 -m refinement.handler
