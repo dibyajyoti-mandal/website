@@ -150,3 +150,19 @@ Detailed flag usage:
 
 In summary, the CLI flags in `krknctl` provide a powerful way to customize the behavior of the tool and fine-tune its functionality. By using these flags, users can tailor the behavior of `krknctl` to suit their specific needs and requirements. It is recommended to explore the available flags and their usage to get the most out of the tool.
 
+Furthermore, the following examples demonstrate the usage of the CLI flags in different scenarios:
+- Using `krknctl` with the `--log-level` flag to specify the logging level for a specific component.
+- Using `krknctl` with the `--runtime` flag to specify the container runtime options.
+- Using `krknctl` with the `--net` flag to specify the network interface to bind to.
+
+These examples illustrate the flexibility and customization options provided by the CLI flags in `krknctl`.
+
+Additionally, the following best practices are recommended when using the CLI flags:
+- Always refer to the documentation for the latest information on available flags and their usage.
+- Use the `--help` flag to display help information for a specific flag or to get a list of all available flags.
+- Experiment with different flag combinations to find the one that works best for your use case.
+- Be aware of the potential performance and compatibility implications of using certain flags, and use them with caution.
+
+By following these best practices and using the CLI flags effectively, users can get the most out of `krknctl` and customize its behavior to suit their specific needs and requirements.
+
+The CLI flags in `krknctl` provide a powerful way to customize the behavior of the tool and fine-tune its functionality. With the flexibility and customization options provided by these flags, users can tailor the behavior of `krknctl` to suit their specific needs and requirements. It is recommended to explore the available flags and their usage to get the most out of the tool.
