@@ -48,6 +48,15 @@ Some advanced use cases for the CLI flags include:
 - Using the `--runtime` flag to specify the container runtime options, for example, `--runtime docker --runtime-opts '--privileged' --runtime-opts '--net=host'`.
 - Using the `--net` flag to specify the network interface to bind to, for example, `--net eth0 --net ip=192.168.1.100`.
 
+A more detailed explanation of each flag is as follows:
+- `--help`: This flag displays help information about the available flags and their usage. It provides a list of all available flags, along with their descriptions and usage examples.
+- `--version`: This flag displays the version of `krknctl` being used. It provides information about the current version of the tool, which can be useful for troubleshooting and debugging purposes.
+- `--verbose`: This flag enables verbose logging to provide more detailed output. It can be used to debug issues and provides more detailed information about the execution of the tool.
+- `--debug`: This flag enables debug mode to provide more detailed error messages and debugging information. It can be used to debug issues and provides more detailed information about the execution of the tool.
+- `--log-level`: This flag specifies the logging level, which can be one of 'debug', 'info', 'warn', or 'error'. It can be used to customize the logging level and provides more flexibility in terms of logging.
+- `--runtime`: This flag specifies the container runtime to use, which can be one of 'docker' or 'podman'. It provides more flexibility in terms of container runtime and allows users to choose the runtime that best suits their needs.
+- `--net`: This flag specifies the network interface to bind to. It provides more flexibility in terms of network configuration and allows users to choose the network interface that best suits their needs.
+
 By using these flags, users can tailor the behavior of `krknctl` to suit their specific needs and requirements. It is recommended to explore the available flags and their usage to get the most out of the tool.
 
 Additional considerations when using the CLI flags include:
@@ -55,4 +64,6 @@ Additional considerations when using the CLI flags include:
 - The flags can be combined in various ways to achieve the desired outcome.
 - The flags can be used to override the default settings, which can be useful in certain situations.
 - The flags can be used to enable or disable certain features, for example, the `--debug` flag can be used to enable debug mode.
-
+- It is also important to note that some flags may have conflicting options, and users should be careful when combining flags to avoid any conflicts.
+- Users should also be aware of the potential security implications of using certain flags, and should use them with caution.
+- The documentation for `krknctl` provides more detailed information about the available flags and their usage, and users are encouraged to refer to it for more information.
